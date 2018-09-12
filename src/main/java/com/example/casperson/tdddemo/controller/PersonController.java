@@ -16,7 +16,6 @@ public class PersonController {
 	
 	@Autowired
 	PersonService personService;
-	// public List<Person> findByLastNameLike(@RequestParam("lastName") String lastName)
 	@RequestMapping(value="/personController/findAllPeopleWithLastName", method= {RequestMethod.GET})
 	public List<Person> findAllPeopleWithLastName(@RequestParam("lastName") String lastName) {
 		return  personService.findAllByLastName(lastName);
