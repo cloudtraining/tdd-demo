@@ -20,7 +20,6 @@ import com.example.casperson.tdddemo.model.Person;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=TddDemoApplication.class, webEnvironment=WebEnvironment.RANDOM_PORT)
-
 public class PersonControllerIntegrationTest {
 
 	@Autowired

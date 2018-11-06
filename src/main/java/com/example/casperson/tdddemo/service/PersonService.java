@@ -17,7 +17,5 @@ public class PersonService {
 	public List<Person> findAllByLastName(String lastName) {
 		return repo.findAllByLastName(lastName);
 	}
-
-	
 	
 }

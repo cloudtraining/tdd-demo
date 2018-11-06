@@ -1,7 +1,6 @@
 package com.example.casperson.tdddemo.repository;
 
 import static org.junit.Assert.assertNotNull;
-import static org.mockito.Mockito.when;
 
 import java.util.List;
 
@@ -14,7 +13,6 @@ public class PersonRepositoryTest {
 
 	@Test
 	public void testFindAllByLastName() {
-		
 		PersonRepository personRepository = new PersonRepository();
 		assertNotNull(personRepository);
 		List<Person> personList = personRepository.findAllByLastName("Casperson");
@@ -25,7 +23,6 @@ public class PersonRepositoryTest {
 	public void testExceptionForNotFoundPersons() {
 		PersonRepository personRepository = new PersonRepository();
 		personRepository.findAllByLastName("Vandermoon");
-		
 	}
 
 }
